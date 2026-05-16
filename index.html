@@ -300,9 +300,9 @@
       <div class="contact-info">
         <p>¿Tienes preguntas sobre el proceso de registro o nuestros servicios? Escríbenos directamente.</p>
         <div class="contact-details">
-          <div class="contact-item"><span>Correo</span><span>contacto@immagemanager.com</span></div>
-          <div class="contact-item"><span>WhatsApp</span><span>+52 XXX XXX XXXX</span></div>
-          <div class="contact-item"><span>Ubicación</span><span>México</span></div>
+          <div class="contact-item"><span>Correo</span><span>immagemanager@gmail.com</span></div>
+          <div class="contact-item"><span>WhatsApp</span><span>+52 7551049666</span></div>
+          <div class="contact-item"><span>Ubicación</span><span>IXTAPA ZIHUATANEJO MEXICO</span></div>
         </div>
         <div class="social-links">
           <a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Facebook</a>
@@ -341,7 +341,7 @@ async function enviarFormulario(e) {
   const fields = {};
   data.forEach((v, k) => fields[k] = v);
   // ── Reemplaza TU_FORMSPREE_ID con el código de formspree.io ──
-  const ENDPOINT = 'https://formspree.io/f/TU_FORMSPREE_ID';
+  const ENDPOINT = 'https://formspree.io/f/xqejzpnp';
   try {
     const res = await fetch(ENDPOINT, {
       method: 'POST',
@@ -356,7 +356,7 @@ async function enviarFormulario(e) {
       btn.textContent = 'Enviado ✓';
     } else { throw new Error(); }
   } catch {
-    msg.textContent = 'Hubo un error. Escríbenos directamente a registro@immagemanager.com';
+    msg.textContent = 'Hubo un error. Escríbenos directamente a immagemanager@gmail.com.com';
     msg.className = 'form-msg error';
     msg.style.display = 'block';
     btn.textContent = 'Enviar ficha de registro';
